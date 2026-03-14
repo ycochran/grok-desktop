@@ -1,7 +1,20 @@
-# Tauri + Svelte + TypeScript
+# Grok Desktop for macOS
 
-This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+A native macOS desktop shell for **Grok** with a focused single-window interface and local productivity tools.
 
-## Recommended IDE Setup
+Built with **Tauri + Svelte + TypeScript** for a lightweight native experience.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+[![Release](https://img.shields.io/github/v/release/ycochran/grok-desktop)](https://github.com/ycochran/grok-desktop/releases)
+[![Downloads](https://img.shields.io/github/downloads/ycochran/grok-desktop/total)](https://github.com/ycochran/grok-desktop/releases)
+[![Platform](https://img.shields.io/badge/platform-macOS-blue)](https://github.com/ycochran/grok-desktop)
+[![License](https://img.shields.io/github/license/ycochran/grok-desktop)](LICENSE)
+
+---
+
+# Install
+
+## Homebrew (recommended)
+
+```bash
+brew tap ycochran/grok-desktop
+brew install --cask grok-desktop
