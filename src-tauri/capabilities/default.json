@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability for the local shell webview only. Remote child webviews intentionally do not receive IPC access.",
+  "webviews": ["main"],
+  "permissions": ["core:default"]
+}

@@ -1,0 +1,23 @@
+[package]
+name = "grok-desktop-v2"
+version = "0.1.0"
+description = "Grok Desktop for macOS"
+authors = ["yale.cochran"]
+edition = "2021"
+
+[lib]
+name = "grok_desktop_v2_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "=2.9.5", features = ["image-png", "tray-icon", "unstable"] }
+tauri-plugin-dialog = "2.4.0"
+tauri-plugin-single-instance = "2"
+tauri-plugin-global-shortcut = "2.3.1"
+tauri-plugin-window-state = "2"
+url = "2"

@@ -1,0 +1,31 @@
+{
+  "name": "grok-desktop-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "tauri": "tauri",
+    "release:macos:app": "bash scripts/build-macos-release.sh",
+    "release:macos:dmg": "bash scripts/package-macos-dmg.sh",
+    "release:macos:metadata": "bash scripts/render-release-metadata.sh",
+    "release:macos:verify": "bash scripts/verify-macos-release.sh",
+    "release:macos": "npm run release:macos:app && npm run release:macos:dmg && npm run release:macos:metadata && npm run release:macos:verify"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@tauri-apps/api": "2.9.1",
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.9.5",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3"
+  }
+}
